@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Task employee</title>
+	<script type="text/javascript" src="assets/js/Task.js"></script>
+	<script type="text/javascript" src="assets/js/Employee.js"></script>
+	<script type="text/javascript">
+		var employee = new Employee("Qnko");
+	
+		var task1 = new Task("Homework", 72);
+
+		employee.setCurrentTask(task1);
+		employee.setHoursLeft(7);
+		employee.work();
+		employee.showReport();
+	</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
