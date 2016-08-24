@@ -7,27 +7,18 @@
 <script type="text/javascript" src="assets/js/GSM.js"></script>
 <script type="text/javascript">
 	var gsm1 = new GSM("Nokia");
-	gsm1.insertSimCard("0888111222");
+	gsm1.insertSimCard("0888896553");
 	
 	var gsm2 = new GSM("iPhone");
-	gsm2.insertSimCard("0888111333");
-	
-	var call_ = new Call(gsm1, gsm2, 70);
-	var call__ = new Call(gsm1, gsm2, 50);
+	gsm2.insertSimCard("0888877854");
 	
 	
-	call_.setReceiver(gsm1);
-	call_.setCaller(gsm2);
-	
-	gsm1.call(gsm2, call_);
-	gsm2.call(gsm1, call__);
-	gsm2.call(gsm1, call__);
-	
-	console.log(gsm1.getModel());
-	gsm1.getInfo(gsm1);
-	console.log(" ");
 	console.log(gsm2.getModel());
-	gsm2.getInfo(gsm2);
+	gsm2.call(gsm1, 20);
+	
+	console.log(" ");
+	console.log(gsm1.getModel());
+	gsm1.getInfo();
 </script>
 </head>
 <body>
